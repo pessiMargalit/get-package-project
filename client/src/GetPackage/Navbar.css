@@ -1,0 +1,125 @@
+
+/* @import url(https://fonts.googleapis.com/css?family=Tangerine); */
+/* @import url(https://fonts.googleapis.com/css?family=Wix+Madefor+Display); */
+/* @import url(https://fonts.googleapis.com/css?family=Abel); */
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Caveat);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
+
+
+
+body
+{
+  font-family: 'Helvetica';
+}
+ul
+{
+  list-style:none;
+}
+a
+{
+  text-decoration:none;
+  cursor: pointer;
+}
+
+.navbar
+{
+  z-index: 1;
+  position: fixed;
+  width:100%;
+  padding:1vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.navbar .logo
+{
+margin-left: 2vw;
+  font-family: 'Raleway', serif;
+  /* font-family: 'Dancing Script', serif; */
+      font-size: 38px;
+    color:  #000000;
+  
+}
+.navbar .nav-links ul
+{
+  display:flex;
+}
+.navbar .nav-links ul li
+{
+  margin:0 25px;
+}
+.navbar .nav-links ul li.active a
+{
+  color:#978471;
+  font-weight:600;
+}
+.navbar a 
+{
+  color:rgb(0, 0, 0);
+}
+
+.navbar .menu-hamburger
+{
+  display:none;
+  color:white;
+  position:absolute;
+  top:50px;
+  right:50px;
+  font-size:35px;
+  cursor:pointer;
+}
+
+
+@media screen and (max-width:900px)
+{
+  .navbar
+  {
+    padding:0;
+  }
+  .navbar .logo
+  {
+    font-family:  'Tangerine', serif;
+    display:none;
+  }
+  .navbar .menu-hamburger
+  {
+    display:block;
+  }
+  .nav-links
+  {
+    top:0;
+    left:-100%;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(0,0,0,0.5);
+    backdrop-filter:blur(8px);
+    width:100%;
+    height:100vh;
+    transition: left 0.5s ease;
+    
+  }
+  .nav-links.mobile-menu
+  {
+  left:0;
+    
+  }
+
+  .nav-links ul
+  {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .navbar .nav-links ul li
+  {
+  margin:25px 0;
+  font-size:1.2em;
+  }
+  .menu-hamburger
+  {
+    display:block;
+  }} 

@@ -1,0 +1,317 @@
+footer {
+    background-color: #000000;
+    padding: 3em 4em 2em;
+   
+}
+#icons{
+    text-align: left;
+}
+h6{
+    color: white;
+    text-align: left;
+    padding-left: 2vw;
+}
+#checkbox{
+    margin-top: "2vh";
+    accent-color:#978471 ;
+}
+    footer .logo {
+        color:#978471;
+        font-size: 3vw;
+        font-family: 'Tangerine', serif;
+    }
+
+    footer .row {
+        margin: 2em 0;
+        font-family: 'Helvetica';
+        color: #978471;
+        position: relative;
+        border-bottom: 1px solid #978471;
+    }
+    
+    .footer-toggle {
+        display: none;
+    }
+
+    .link-cat {
+        cursor:pointer;
+    }
+    
+    footer ul {
+        padding:0;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;        
+    }
+
+        footer ul li {
+            list-style-type: none;
+            padding:0;            
+            -webkit-transition: all .5s ease-in-out;            
+            transition: all .5s ease-in-out;
+            line-height: 2;    
+            color: white;        
+        }  
+
+        footer .footer-cat, #newsletter span {
+            font-size: 20px;
+        }
+
+        .footer-cat-links a {
+            color: #ffffff;
+            text-decoration: none;
+            position: relative;
+        }
+
+        .footer-cat-links.active > li a {
+            pointer-events: auto;
+        }
+
+        .footer-cat-links a:after {
+            top: 21px;
+            content: "";
+            display: block;
+            height: 1px;
+            left: 50%;
+            position: absolute;
+            width: 0;
+            background: #978471;
+            
+            -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        }
+
+        .footer-cat-links a:hover:after, .footer-cat-links a:focus:after {
+            width: 100%;
+            left: 0;
+        }
+
+        footer #subscribe {
+            margin: 20px 0px 30px;
+        }
+
+        input#subscriber-email {
+            outline: none;
+            padding: 8px;
+            background: #000000;
+            border: 0px solid #978471;
+            color: #978471;
+            border-bottom-width:1px ;
+            border-bottom-color: #978471;
+            border-radius: 4px 0px 0px 4px;
+        }
+
+        input#subscriber-email::-webkit-input-placeholder {
+            color:#978471;
+        }
+
+        input#subscriber-email:-ms-input-placeholder {
+            color:#978471;
+        }
+
+        input#subscriber-email::-ms-input-placeholder {
+            color:#978471;
+        }
+
+        input#subscriber-email::placeholder {
+            color:#978471;
+        }
+
+    .col-3 {
+        display: inline-table;
+        width:25%;
+    }
+
+    .col-3#newsletter {
+        width:50%
+    }
+
+    .social-2 {
+        display: none;
+    }
+
+    .social-links {
+        bottom: 44px;
+        position: absolute;
+        left: 0;
+    }
+    
+        .social-links a {
+            color: #978471;
+            font-size: 20px;
+            border-radius: 20px;
+            padding: 6px;
+
+            -webkit-transition:all .2s ease-in;
+            transition:all .2s ease-in;
+        }
+
+        .social-links a:not(:last-child) {
+            margin-right: 10px;
+        }
+
+        .social-links a:hover, .social-links a:focus {
+            background-color: #212121;
+        }
+
+            .social-links a i {
+                width: 25px;
+                height: 25px;
+                text-align:center;
+            }
+
+            #newsletter #address li:not(:first-child) {
+                padding: 20px 0;
+            }
+        
+                #newsletter #address li i {
+                    font-size: 45px;
+                    width: auto;
+                    padding: 5px;
+                }
+
+                    #newsletter #address li div {
+                        color: #ffffff;
+                        font-size: 14px;
+                        width: 80%;
+                        text-align: left;
+                        float: right;
+                        line-height: 1.3;
+                    }
+
+    #copyright {
+        text-align: center;
+        color:#fff;
+        font-family: 'Helvetica';
+    }
+
+#owner {
+    text-align: center;
+    padding: 20px 0 0px;
+    color: #fff;
+    font-family: 'Helvetica';
+}
+
+    #owner a {
+        color:#fff;        
+    }
+
+/* iPads to Smartphone for Common Elements ----------- */  
+@media only screen and (max-width : 1024px) {    
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+        position: relative;
+    }
+
+    .col-3#newsletter {
+        width: 100%;
+        position: relative;
+        padding-bottom: 0;
+        padding-top: 1em;
+    }    
+        
+    footer .footer-cat {
+        margin-left: 25px;
+    }
+     
+    .footer-toggle,.footer-toggle::after {
+        background: #fff;
+        height: 2px;
+        width: 15px;
+        position: absolute;
+        display: block;
+        -webkit-transition:all .4s ease-in;
+        transition:all .4s ease-in;
+    }
+
+    .footer-toggle {        
+        top: 11px;
+        cursor:pointer;
+    }
+
+    .footer-toggle::after {
+        content: '';
+        -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+    }
+
+    .btnActive .footer-toggle::after {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+
+    .footer-cat-links {
+        margin: 0 0em 0px 1.6em;
+    }
+
+        .footer-cat-links a {
+            pointer-events: none;
+        }
+    
+    .footer-cat-links li {
+        line-height: 0;
+        opacity: 0;
+    }
+
+    .footer-cat-links.active > li{
+        line-height:2;
+        opacity:1;
+    }
+
+    .social-1 {
+        display: none !important;
+    }
+
+    .social-2 {
+        display: block;
+        position: absolute;
+        top: 7.5em;
+        bottom: 0px;
+        height:20px;
+        padding-bottom: 1.5em;
+        width: 100%;
+    }
+
+    #address {
+        margin-top: 6em;
+    }
+
+    #newsletter #address li i {
+        width: auto;
+    }
+
+    #newsletter #address li div {
+        font-size: 14px;
+        width: auto;
+        text-align: -webkit-auto;
+        float: none;
+        line-height: 2;
+        display: inline-block;
+        padding: 10px 0 15px;
+    }
+
+    #newsletter #address li div:last-child {
+        padding-bottom: 0;
+    }
+
+    #newsletter #address li:not(:first-child) {
+        padding: 20px 0 0;
+    }
+}
+
+/* iPads (portrait)----------- */  
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+    
+    footer {
+        padding-right:3em;
+        padding-left:3em;
+    }
+
+    .col-3 {
+        display: block;
+        width: 100%;
+        padding-bottom: 1em;
+    }
+}
