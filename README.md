@@ -46,7 +46,3 @@ dotnet run
 ## Contributing
 
 If you would like to contribute to the project, please fork the repository and open an issue.
-
-## License
-
-The project is licensed under the MIT License.
