@@ -30,7 +30,6 @@ To get started with the project, you will need to install the following dependen
 * .NET Core 3.1
 * MongoDB
 * React
-* Bootstrap
 
 Once you have installed the dependencies, you can run the application by following these steps:
 
